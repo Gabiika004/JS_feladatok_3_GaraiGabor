@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Második feladat Garai Gábor</title>
+</head>
+<body>
+    <h1>Adja meg a pizza rendeléséhez szükséges információkat!</h1>
+
+<form id="pizza_rendel" action="POST">
+    <table>
+        <tr>
+            <th><h3>A megrendelő adatai:</h3></th>
+        </tr>
+        <tr>
+            <td><label for="nev">Teljes név:</label></td>
+            <td><input type="text" name="Tnev" id="nev"></td>
+        </tr>
+        <tr>
+            <td><label for="tel">Telefonszám:</label></td>
+            <td><input type="text" name="telSz" id="tel"></td>
+        </tr>
+        <tr>
+            <td><label for="iranyito">Irányítószám:</label></td>
+            <td><input type="text" name="iranyitoSz" id="iranyito"></td>
+        </tr>
+        <tr>
+            <td><label for="varos">Város:</label></td>
+            <td><input type="text" name="varosN" id="varos"></td>
+        </tr>
+        <tr>
+            <td><label for="utca">Utca:</label></td>
+            <td><input type="text" name="utcaN" id="utca"></td>
+        </tr>
+        <tr>
+            <td><label for="haz">Házszám:</label></td>
+            <td><input type="text" name="hazSz" id="haz"></td>
+        </tr>
+        
+        
+    </table>
+
+    <h3>Milyen legyen a pizza?</h3>
+    <label for="alap">Alap:  
+        <select name="alap" id="alap">
+        <option value="1">Paradicsomos</option>
+        <option value="2">Tejfölös</option>
+        <option value="3">Sajtszószos</option>
+        <option value="4">Barbecue szószos</option>
+        </select> 
+    </label>
+
+        <h4>Feltétek:</h4> 
+        <label for="sonka">Sonka: <input type="checkbox" name="feltetel" id="sonka" value="sonka"></label>
+        <label for="csirkeMell">Csirkemell: <input type="checkbox" name="feltetel" id="csirkeMell" value="csirkemell"></label>
+        <label for="bacon">Bacon: <input type="checkbox" name="feltetel" id="bacon" value="bacon"></label>
+        <label for="kukorica">Kukorica: <input type="checkbox" name="feltetel" id="kukorica" value="kukorica"></label>  <br> 
+        <label for="fustoltSajt">Füstölt sajt: <input type="checkbox" name="feltetel" id="fustoltSajt" value="füstöltsajt"></label> 
+        <label for="paprika">Paprika: <input type="checkbox" name="feltetel" id="paprika" value="paprika"></label>
+        <label for="ananasz">Ananász: <input type="checkbox" name="feltetel" id="ananasz" value="ananász"></label>
+        <label for="szalami">Szalámi: <input type="checkbox" name="feltetel" id="szalami" value="szalámi"></label> 
+
+    </label>
+
+    <h3>Egyéb:</h3>
+    <label for="other">Bátran írjon: <input style="padding: 10px;" type="text" name="other" id="other"></label>
+
+    <button id="order" type="button">Felvétel</button>
+
+</form>
+
+
+<script src="feladat_2_js.js"></script>
+</body>
+</html>

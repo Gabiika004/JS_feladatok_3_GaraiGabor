@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmadik feladat Garai Gábor</title>
+</head>
+<body>
+    <h1>Adja meg az adatait a regisztrálához:</h1>
+
+    <form id="regisztral" action="POST">
+
+        <table>
+            <tr>
+                <td><label for="nev">Felhasználónév:</label></td>
+                <td><input type="text" name="nev" id="nev"></td>
+            </tr>
+            <tr>
+                <td><label for="jelszo">Jelszó:</label></td>
+                <td><input type="password" name="jelszo" id="jelszo"></td>
+            </tr>
+            <tr>
+                <td><label for="jelszo2">Jelszó megerősítése:</label></td>
+                <td><input type="password" name="jelszo2" id="jelszo2"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail cím:</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="date">Születési dátum::</label></td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+        </table>
+
+        <button type="button" id="Regist">Regisztral</button>
+
+    </form>
+
+    <script src="feladat_3_js.js"></script>
+</body>
+</html>

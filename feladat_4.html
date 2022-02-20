@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negyedik feladat Garai Gábor</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row jumbotron">
+                <div class="col-12 text-center">
+                    <h1><b>Panaszfelvétel</b></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 text-center">
+                <h2>Kérem, adja meg a dokumentum hitelesítéséhez szükséges adatokat!</h2>
+            </div>
+
+        </div>   
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <form action="#" class="row g-4" id="panasz">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Teljes Név" name="nev">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" placeholder="E-mail cím" name="email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="password" class="form-control" placeholder="Ügyfél azonosító:" name="id">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="tel" class="form-control" placeholder="Telefonszám:" name="tel">
+                    </div>
+                    <div class="form-group col-md-12 text-center">
+                        <p><b>Panasz típusa:</b></p>
+                    </div>
+                    <div class="form-group col-md-12 text-center">
+                        <label class="form-label radio" for="alkalmazott">Alkalmazott: <input type="radio" class="form-control" id="alkalmazott" name="tipus" value="Alkalmazott"></label>
+                        <label class="form-label radio" for="vezetoseg">Vezetőség: <input type="radio" class="form-control" id="vezetoseg" name="tipus" value="Vezetőség"></label>
+                        <label class="form-label radio" for="kornyezet">Környezet: <input type="radio" class="form-control" id="kornyezet" name="tipus" value="Környezet"></label>
+                    </div>
+                    <div class="form-group col-md-12 text-center">
+                        <p><b>Szolgáltatások, amiket igénybe vett:</b></p>
+                    </div>
+                    <div class="form-group col-md-12 text-center">
+                        <label class="form-label checkbox" for="karbantartas">Karbantartás: <input type="checkbox" class="form-control" id="karbantartas" name="service" value="Karbantartás"></label>
+                        <label class="form-label checkbox" for="szereles">Szerelés: <input type="checkbox" class="form-control" id="szereles" name="service" value="Szerelés"></label>
+                        <label class="form-label checkbox" for="takaritas">Takarítás: <input type="checkbox" class="form-control" id="takaritas" name="service" value="Takarítás"></label>
+                        <label  class="form-label checkbox" for="telefon">Telefon: <input type="checkbox" class="form-control" id="szereles" name="service" value="Telefon"></label>
+                        <label  class="form-label checkbox" for="internet">Internet: <input type="checkbox" class="form-control" id="szallitas" name="service" value="Internet"></label>
+                    </div>
+                  
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" placeholder="Tárgy" name="object">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Üzenet"></textarea>
+                    </div>
+                    <div class="text-center col-md-12">
+                        <button class="btn btn-success" type="button" id="submit">Felvétel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="feladat_4_js.js"></script>
+
+</body>
+</html>
